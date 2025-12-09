@@ -1,0 +1,118 @@
+/* колір навігації, заголовків і лого rgba(46, 47, 66, 1); */
+/* фон наша команда rgba(244, 244, 253, 1); */ 
+/* акцент лого rgba(77, 90, 229, 1); */
+/* колір контактів, тексту rgba(67, 68, 85, 1); */
+/* Герой rgba(255, 255, 255, 1); */
+/* футер, футер-лого rgba(244, 244, 253, 1); */
+:root {
+--primary-text-color: rgba(67, 68, 85, 1);
+--title-text-color: rgba(46, 47, 66, 1);  
+--accent-color: rgba(64, 75, 191, 1);
+--logo-accent-color: rgba(77, 90, 229, 1);
+--hero-title-color: rgba(255, 255, 255, 1);
+--background-team: rgba(244, 244, 253, 1);
+}
+
+ul, ol {
+	list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+body {
+  background-color: rgba(255, 255, 255, 1);
+       color: rgba(67, 68, 85, 1);
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+    font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.32px;
+}
+
+
+/* Хедер */
+.logo-entirely {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  }
+.logo {
+  color: var(--title-text-color);
+}
+.logo-accent {
+  color: var(--logo-accent-color);
+}
+.nav a { 
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+.nav a:hover,
+.nav a:focus {
+  color: var(--accent-color);
+}
+/* .nav a:active {
+  text-decoration: underline;
+  color: var(--accent-color);
+} */
+.contacts a {
+  color: var(--primary-text-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+.hero-title {
+  background-color: var(--title-text-color);
+  color: var(--hero-title-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+.button {
+  background-color: var(--logo-accent-color);
+  color: var(--hero-title-color);
+  letter-spacing: 0.64px;
+}
+.button:hover {
+  background-color: var(--accent-color);
+  color: var(--hero-title-color);
+  cursor: pointer;
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+.qualities .title,
+.team .name,
+.portfolio .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.section-team {
+  background-color: var(--background-team);
+}
+
+/* Footer */
+footer {
+  background-color: var(--title-text-color);
+}
+.logo-white {
+color: var(--background-team);
+}
+.footer-text {
+  color: var(--background-team);
+}
