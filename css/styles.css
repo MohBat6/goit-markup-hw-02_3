@@ -1,9 +1,3 @@
-/* колір навігації, заголовків і лого rgba(46, 47, 66, 1); */
-/* фон наша команда rgba(244, 244, 253, 1); */ 
-/* акцент лого rgba(77, 90, 229, 1); */
-/* колір контактів, тексту rgba(67, 68, 85, 1); */
-/* Герой rgba(255, 255, 255, 1); */
-/* футер, футер-лого rgba(244, 244, 253, 1); */
 :root {
 --primary-text-color: rgba(67, 68, 85, 1);
 --title-text-color: rgba(46, 47, 66, 1);  
@@ -12,12 +6,27 @@
 --hero-title-color: rgba(255, 255, 255, 1);
 --background-team: rgba(244, 244, 253, 1);
 }
-
+/* html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box; */
+/* } */
 ul, ol {
 	list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+img {
+  display: block;
 }
 
 
@@ -87,6 +96,10 @@ letter-spacing: 0.32px;
 }
 
 /* Section */
+.section {
+  width: 1440px;
+  padding: 16px 8px;
+}
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -102,7 +115,7 @@ letter-spacing: 0.32px;
   font-size: 20px;
   line-height: 1.2;
 }
-.section-team {
+.section.team {
   background-color: var(--background-team);
 }
 
